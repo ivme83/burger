@@ -1,0 +1,24 @@
+{{!-- <li>
+	{{burger_name}}
+
+	<button class="change-devoured btn-primary" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		{{#if devoured}}Make this burger!{{else}}Time to Eat!{{/if}}
+	</button>
+
+	<button class="delete-burger btn-primary" data-id="{{this.id}}">Throw away!</button>
+</li> --}}
+
+
+{{!-- <button class="myBtn" type="submit"><img class="imgBtn" src="assets/img/rbn-btn.png"><span>Add</span></button> --}}
+
+<li>
+	{{burger_name}}
+
+	<button class="change-devoured myBtn" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		<img class="imgBtn" src="assets/img/rbn-btn.png"><span>
+		{{#if devoured}}Make this burger!{{else}}Time to Eat!{{/if}}
+		</span>
+	</button>
+
+	<button class="delete-burger myBtn" data-id="{{this.id}}"><img class="imgBtn" src="assets/img/rbn-btn.png"><span>Throw Away</span></button>
+</li>
