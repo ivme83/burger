@@ -18,7 +18,7 @@ var mysql = require("mysql");
 //   console.log("connected as id " + connection1.threadId);
 // });
 
-var connection2 = mysql.createConnection({
+var connection = mysql.createConnection({
   port: 3306,
   host: "mysql.iv-design.net",
   user: "rolwil3",
@@ -32,9 +32,9 @@ connection2.connect(function(err) {
     console.error("error connecting: " + err.stack);
     return;
   }
-  console.log("connected as id " + connection2.threadId);
+  console.log("connected as id " + connection.threadId);
 });
 
 
 // Export connection for our ORM to use.
-module.exports = connection2;
+module.exports = connection;
