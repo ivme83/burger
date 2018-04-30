@@ -2,10 +2,11 @@
   <div class="menu-grid">
     <div class="menu-top">
       <h1>Eat Da Burger!</h1>
-      <img class="divider-top" src="../assets/img/swirls9.png">
+      <br>
     </div>
-    <div class="menu-left">
-      <h1>Burgers that have been eaten!</h1>
+    <div class="menu-btm-left">
+      <img class="swirl" src="../assets/img/swirls9.png">
+      <h1>On Menu</h1>
 
       <ul>
         {{#each burgers}}
@@ -16,8 +17,9 @@
       </ul>
     </div>
 
-    <div class="menu-right">
-      <h1>Burgers that have not been eaten!</h1>
+    <div class="menu-btm-right">
+      <img class="swirl" src="../assets/img/swirls9.png">
+      <h1>Ordered</h1>
 
       <ul>
         {{#each burgers}}
@@ -28,8 +30,8 @@
       </ul>
     </div>
 
-    <div class="menu-btm">
-      <img class="divider-btm" src="../assets/img/swirls9.png">
+    <div class="menu-left">
+      <img class="swirl" src="../assets/img/swirls9.png">
       <h1>Add a Burger</h1>
       <br>
       <form class="create-form">
@@ -47,8 +49,11 @@
         </div>
 
         <button class="myBtn" type="submit"><img class="imgBtn" src="assets/img/rbn-btn.png"><span>Add</span></button>
-      </form>
-      
+      </form>      
+    </div>
+
+    <div class="menu-right">
+      <img src="../assets/img/burger.png">
     </div>
   </div>
 </div>

@@ -4,18 +4,8 @@ body {
     color: white;
 }
 
-.divider-top {
+.swirl {
     width: 200px;
-}
-
-.divider-btm {
-    width: 200px;
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-}
-
-ul {
-    list-style-type: none;
 }
 
 .input-holder{
@@ -38,10 +28,10 @@ textarea:focus, input:focus{
 }
 
 .txtFrm {
-    height: 50px;
+    height: 75px;
     width: 175px;
     position: absolute;
-    top: -10px;
+    top: -20px;
     z-index: 0;
     margin-left: 5px;
 }
@@ -50,7 +40,7 @@ textarea:focus, input:focus{
     background-color: transparent;
     background-repeat:no-repeat;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     overflow: hidden;
     height: 80px;
     width: 160px;
@@ -74,12 +64,11 @@ textarea:focus, input:focus{
 
 .menu-grid {
     display: grid;
-    grid-template: auto 3fr 1fr / 1fr 1fr;
+    grid-template: auto 1fr 1fr / 1fr 1fr;
     grid-template-areas:    "tp tp"
                             "lft rt"
-                            "lft rt"
-                            "btm btm";
-    grid-gap: 0px;
+                            "btmL btmR";
+    grid-gap: 10px;
     width: 100%;
     height: 100%;
 }
@@ -93,22 +82,28 @@ textarea:focus, input:focus{
     font-size: 4em;
 }
 
+.menu-btm-left {
+    grid-area: btmL;
+    text-align: center;
+}
+
+.menu-btm-right {
+    grid-area: btmR;
+    text-align: center;
+}
+
 .menu-left {
     grid-area: lft;
-    text-align: left;
+    text-align: center;
 }
 
 .menu-right {
-    grid-area: rt;
-    text-align: right;
-}
-
-.menu-btm {
-    text-align: center;
-    grid-area: btm;
+    grid-area: rt;    
+    margin: auto;
 }
 
 ul {
     padding-left: 0px;
+    list-style-type: none;
 }
 
